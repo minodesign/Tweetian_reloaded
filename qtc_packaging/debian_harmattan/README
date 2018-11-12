@@ -3,4 +3,17 @@ The Debian Package tweetian
 
 Comments regarding the Package
 
- -- unknown <>  Sun, 03 Jun 2012 22:52:13 +0800
+This is an updated version of original Tweetian for Harmattan, called 'Tweetian Reloaded'.
+I am trying to do few update to this nice Twitter client for th N9, starting from the issues caused by the time,
+like the 140 char limit, and the absence of images.
+
+Also, will improve the UI, following more strictly the (old) Nokia UX guideline, and correcting
+some little UI issue there and there.
+
+The old repo was locked, so I cloned a new one there: 
+https://github.com/minodesign/Tweetian_reloaded
+
+You are welcome as a QT, QML, or C++ developer!
+In next weeks, will add a list of #issues to solve, under the hood.
+
+ -- Giovanni Mineli <>  mon, 12 Nov 2018 17:31 +0200

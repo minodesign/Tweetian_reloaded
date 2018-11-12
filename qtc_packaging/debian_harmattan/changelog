@@ -1,3 +1,9 @@
+Tweetian Reloaded (1.8.4) stable; urgency=normal
+  * Removed 140 char limit on new tweet, updated to 280
+  * Removed twitlong service
+
+ -- Minelli <jolla@minodesign.it>  Fri, 12 Nov 2018 17:07 +0200
+
 tweetian (1.8.3) stable; urgency=normal
   * Fix user info page
 

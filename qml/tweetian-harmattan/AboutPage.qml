@@ -40,7 +40,7 @@ Page {
             anchors { left: parent.left; right: parent.right }
             height: childrenRect.height
 
-            SectionHeader { text: qsTr("About Tweetian") }
+            SectionHeader { text: qsTr("About Tweetian Reloaded") }
 
             Item {
                 anchors { left: parent.left; right: parent.right }
@@ -57,8 +57,8 @@ Page {
                     font.pixelSize: constant.fontSizeMedium
                     color: constant.colorLight
                     text: qsTr("Tweetian is a feature-rich Twitter app for smartphones, powered by Qt and QML. \
-It has a simple, native and easy-to-use UI that will surely make you enjoy the Twitter experience on your \
-smartphone. Tweetian is open source and licensed under GPL v3.")
+It has a simple, native and easy-to-use UI that will surely make you enjoy the Twitter experience on your Nokia N9. \
+Tweetian Reload is an updated version created in 2018 trying to fix issues caused by the passage of time. \ ")
                 }
             }
 
@@ -82,12 +82,20 @@ smartphone. Tweetian is open source and licensed under GPL v3.")
                 }
             }
 
-            SectionHeader { text: qsTr("Developed By") }
+            SectionHeader { text: qsTr("Original version Developed By") }
 
             AboutPageItem {
                 imageSource: "Image/DicksonBetaDP.png"
                 text: "@DicksonBeta"
                 onClicked: pageStack.push(Qt.resolvedUrl("UserPage.qml"), {screenName: "DicksonBeta"})
+            }
+
+            SectionHeader { text: qsTr("Reloaded version updated by") }
+
+            AboutPageItem {
+                imageSource: "Image/simbolo-minodesign.png"
+                text: "@minodesign"
+                onClicked: pageStack.push(Qt.resolvedUrl("UserPage.qml"), {screenName: "Minodesign"})
             }
 
             SectionHeader { text: qsTr("Powered By") }

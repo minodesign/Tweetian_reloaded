@@ -1,3 +1,6 @@
+#Mac invisible files
+*.DS_Store
+
 # C++ objects and libs
 
 *.slo
@@ -9,6 +12,7 @@
 *.so
 *.dll
 *.dylib
+
 
 # Qt-es
 
@@ -40,3 +44,5 @@ tweetian*_template.pkg
 # Harmattan build files
 
 tweetian
+.DS_Store
+.DS_Store

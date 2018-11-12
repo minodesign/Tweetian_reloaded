@@ -31,7 +31,9 @@ var REQUEST_TOKEN_URL = "https://api.twitter.com/oauth/request_token"
 var ACCESS_TOKEN_URL = "https://api.twitter.com/oauth/access_token"
 
 // GET
-var GET_TIMELIME_URL = "https://api.twitter.com/1.1/statuses/home_timeline.json"
+//var GET_TIMELIME_URL = "https://api.twitter.com/1.1/statuses/home_timeline.json" di scorta//
+var GET_TIMELIME_URL = "https://github.com/twitterdev/tweet-updates/blob/master/samples/initial/extended_extended_14001.json"
+
 var GET_MENTIONS_URL = "https://api.twitter.com/1.1/statuses/mentions_timeline.json"
 var GET_DIRECT_MSG_URL = "https://api.twitter.com/1.1/direct_messages.json"
 var GET_SENT_DIRECT_MSG_URL = "https://api.twitter.com/1.1/direct_messages/sent.json"

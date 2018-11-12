@@ -49,6 +49,12 @@ Page {
             spacing: constant.paddingMedium
 
             ToolButton {
+                id: cancelButton
+                text: qsTr("Cancel")
+                onClicked: pageStack.pop()
+            }
+
+            ToolButton {
                 id: tweetButton
                 text: {
                     switch (type) {
@@ -85,11 +91,6 @@ Page {
                         header.busy = true
                     }
                 }
-            }
-            ToolButton {
-                id: cancelButton
-                text: qsTr("Cancel")
-                onClicked: pageStack.pop()
             }
         }
     }
@@ -132,7 +133,7 @@ Page {
             anchors { right: parent.right; bottom: parent.bottom; margins: constant.paddingMedium }
             font.pixelSize: constant.fontSizeLarge
             color: constant.colorMid
-            text: 140 - shortenText.length - (addImageButton.checked ? constant.charReservedPerMedia : 0)
+            text: 280
         }
     }
 
@@ -478,18 +479,6 @@ Page {
         function commonOnFailure(status, statusText) {
             infoBanner.showHttpError(status, statusText)
             header.busy = false
-        }
-
-        function createUseTwitLongerDialog() {
-            var message = qsTr("Your tweet is more than 140 characters. \
-Do you want to use TwitLonger to post your tweet?\n\
-Note: The tweet content will be publicly visible even if your tweet is private.")
-            dialog.createQueryDialog(qsTr("Use TwitLonger?"), "", message, function() {
-                var replyScreenName = placedText ? placedText.substring(1, placedText.indexOf(" ")) : ""
-                TwitLonger.postTweet(constant, settings.userScreenName, tweetTextArea.text, tweetId, replyScreenName,
-                                     twitLongerOnSuccess, commonOnFailure)
-                header.busy = true
-            })
         }
     }
 }
