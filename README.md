@@ -5,8 +5,13 @@ Tweetian is a feature-rich Twitter app for smartphones, developed using Qt/QML. 
 
 Tweetian original repo seem to be archived or locked, so, because there is still a fanbase around Nokia N9, I decided to create a new repo. Following dicksonleong intentions, the repo include their original indication, and is published under a GNU 3 license.
 
+See the WIKI for tool from the timemachine!
 
-(Text following is from original repo)
+<br>
+(Text below is reported from original repo)
+
+-----------------------------------------------------------------------
+
 Tweetian support Symbian^3 and MeeGo Harmattan (Qt 4.7.4 and Qt 4.8.0).
 
 Build for testing
